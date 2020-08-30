@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="time">
+        <h1>Timer:</h1>
+    
+    </div>
+    <div class="container-fluid">
+        <div class="row mb-3 pt-3">
+            <div class="col-auto">
+                <a href="#" id="high-scores-link" onclick="viewHighScores()">View High Scores</a>
+                <a href="#" id="back-to-start-link" onclick="goBackToStart()" style="display: none;">Go Back to Start</a>
+            </div>
+            <div id="time-container" class="col text-right">
+            </div>
+        </div>
+    </div>
+ </div>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">answer1</button>
+                <button class="btn">answer2</button>
+                <button class="btn">answer3</button>
+                <button class="btn">answer4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="startgame()" id="start-btn" class="start-btn btn">Start</button>
+            <button onclick="nextquestion()"  id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    
+</body>
+</html>
