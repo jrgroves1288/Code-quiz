@@ -58,7 +58,7 @@ function showQuestion(question){
     })
 }
 
-fuction answerSelect(){
+function answerSelect(){
 if choices => answer
 alert("you got it");
 else
@@ -106,4 +106,3 @@ var questions = [
     }
   ];
 
-  
