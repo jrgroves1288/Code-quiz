@@ -19,6 +19,13 @@ function startGame() {
 	setNextQuestion()
 }
 
+startMenu.setAttribute("style", "display: none;");
+scoresMenu.setAttribute("style", "display: none;");
+choicesContent.setAttribute("style", "display: block");
+enterInitialsMenu.setAttribute("style", "display: none;");
+choicesContent.innerHTML = " ";
+viewHighScoresLink.setAttribute("style", "display: none;");
+
 function setTime() {
 	var timerInterval = setInterval(function() {
 	  secondsLeft--;
@@ -53,9 +60,9 @@ function showQuestion(question){
 
 fuction answerSelect(){
 if choices => answer
-alert("you got it")
+alert("you got it");
 else
-alert("sorry but that is incorrect")  
+alert("sorry but that is incorrect");  
 
 }
 
@@ -98,3 +105,5 @@ var questions = [
       answer: "Panthers"
     }
   ];
+
+  
